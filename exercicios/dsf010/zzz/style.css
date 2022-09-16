@@ -1,0 +1,122 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #3ddc84;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(180deg, #2fa866, #063d1e);
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+header > h1 {
+    font-family: 'bebas', Times, serif;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.438);
+    font-weight: normal;
+}
+
+header > p {
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.438);
+    text-align: center;
+}
+
+nav {
+    text-align: left;
+    border-left: 10px solid transparent;
+    
+    
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    border: 4px solid transparent;
+    padding: 3px;
+}
+
+nav > a:hover {
+    background: #217748;
+}
+
+main {
+    background-color: white;
+    margin-right: 60px;
+    margin: 0px 90px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 3px 10px 4px rgba(0, 0, 0, 0.151);
+}
+
+main > article {
+    padding: 8px 18px;
+}
+
+section > h1 {
+    font-family: 'idroid', Times, serif;
+    font-size: 25px;
+    color: #063d1e;  
+}
+
+section > h2 {
+    background-image: linear-gradient(90deg, rgba(20, 128, 20, 0.205), white);
+    text-indent: 7px;
+    font-family: 'idroid', Times, serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #063d1e;
+
+}
+
+p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #238650;
+}
+
+img {
+    width: 100%;
+}
+img#bugdroid {
+    width: 50%;
+    padding: 0% 25%;
+}
+
+p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+aside {
+    background-color: #beebd2;
+}
+
+aside > h1 {
+    background-color: #2eaa66;
+    color: white;
+}
+
+footer {
+    background-color: #063d1e;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin-top: 8px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.541);
+}
+
+footer > p {
+    margin: 0px;
+}
