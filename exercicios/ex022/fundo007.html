@@ -4,46 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo fixo de tela</title>
+    <title>Alinhamento vertical</title>
     <style>
-        /* body {
-            height: 100vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        } */
-        main {
-            background-color: white;
-            max-width: 500px;
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 96vh;
             padding: 10px;
-            margin: auto;
-            border: 1px solid darkblue;
-            border-radius: 15px;
+            background-color: purple;
         }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
 
-        /* Short hand - background 
-            color - image - position - repeat - [size!] - attachment
-        */
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
 
-        body {
-            background: black url(imagens/wallpaper002.jpg)  center center fixed;
-            background-size: cover;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <main>
-        <h1>Teste de imagem de fundo</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat minus recusandae, accusamus sit nemo quas? Corrupti, facilis. Molestias modi, magni eum aspernatur libero pariatur inventore repellendus. Facere, minima doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium ad excepturi assumenda iste vel, corrupti laboriosam sed nam asperiores enim! Nam mollitia ipsum commodi nulla ducimus, incidunt iusto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla eos debitis commodi consequuntur earum laudantium nam amet rerum? Totam, doloremque culpa distinctio voluptate quod eligendi obcaecati voluptas aut dolore?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat minus recusandae, accusamus sit nemo quas? Corrupti, facilis. Molestias modi, magni eum aspernatur libero pariatur inventore repellendus. Facere, minima doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium ad excepturi assumenda iste vel, corrupti laboriosam sed nam asperiores enim! Nam mollitia ipsum commodi nulla ducimus, incidunt iusto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla eos debitis commodi consequuntur earum laudantium nam amet rerum? Totam, doloremque culpa distinctio voluptate quod eligendi obcaecati voluptas aut dolore?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat minus recusandae, accusamus sit nemo quas? Corrupti, facilis. Molestias modi, magni eum aspernatur libero pariatur inventore repellendus. Facere, minima doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium ad excepturi assumenda iste vel, corrupti laboriosam sed nam asperiores enim! Nam mollitia ipsum commodi nulla ducimus, incidunt iusto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla eos debitis commodi consequuntur earum laudantium nam amet rerum? Totam, doloremque culpa distinctio voluptate quod eligendi obcaecati voluptas aut dolore?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat minus recusandae, accusamus sit nemo quas? Corrupti, facilis. Molestias modi, magni eum aspernatur libero pariatur inventore repellendus. Facere, minima doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium ad excepturi assumenda iste vel, corrupti laboriosam sed nam asperiores enim! Nam mollitia ipsum commodi nulla ducimus, incidunt iusto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla eos debitis commodi consequuntur earum laudantium nam amet rerum? Totam, doloremque culpa distinctio voluptate quod eligendi obcaecati voluptas aut dolore?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat minus recusandae, accusamus sit nemo quas? Corrupti, facilis. Molestias modi, magni eum aspernatur libero pariatur inventore repellendus. Facere, minima doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium ad excepturi assumenda iste vel, corrupti laboriosam sed nam asperiores enim! Nam mollitia ipsum commodi nulla ducimus, incidunt iusto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla eos debitis commodi consequuntur earum laudantium nam amet rerum? Totam, doloremque culpa distinctio voluptate quod eligendi obcaecati voluptas aut dolore?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat minus recusandae, accusamus sit nemo quas? Corrupti, facilis. Molestias modi, magni eum aspernatur libero pariatur inventore repellendus. Facere, minima doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium ad excepturi assumenda iste vel, corrupti laboriosam sed nam asperiores enim! Nam mollitia ipsum commodi nulla ducimus, incidunt iusto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla eos debitis commodi consequuntur earum laudantium nam amet rerum? Totam, doloremque culpa distinctio voluptate quod eligendi obcaecati voluptas aut dolore?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat minus recusandae, accusamus sit nemo quas? Corrupti, facilis. Molestias modi, magni eum aspernatur libero pariatur inventore repellendus. Facere, minima doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium ad excepturi assumenda iste vel, corrupti laboriosam sed nam asperiores enim! Nam mollitia ipsum commodi nulla ducimus, incidunt iusto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla eos debitis commodi consequuntur earum laudantium nam amet rerum? Totam, doloremque culpa distinctio voluptate quod eligendi obcaecati voluptas aut dolore?</p>
-    </main>
+    <section id="container">
+        <article id="conteudo">
+            
+        </article>
+    </section>
 </body>
 </html>
